@@ -29,6 +29,7 @@ Our site was created for a person who might have symptoms of Coronavirus. By usi
 
 * Server side API's
     * Covid-19 Statistics: https://covidtracking.com/api/
+    * Foursquare Hospital Locator: https://developer.foursquare.com/places
 
 
 
