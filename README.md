@@ -1,3 +1,5 @@
+Original repo can be viewed here: https://github.com/maidelrego/coolgroupname.git
+
 # Project Two - COVID-19 Symptom Tracker 
 Our site was created for a person who might have symptoms of Coronavirus. By using our site, the user will be able to create an account or login to an existing one, to submit their symptoms that could be related to Coronavirus. Based on their responses they will be given information on the best steps to move forward. Their information will be stored to a MySQL database where hospitals can access their information to compile a waitlist for testing kits. Their results will also be displayed on their profile so they can keep track of their sypmtoms and entries.  
 
