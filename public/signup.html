@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>User Sign Up</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://unpkg.com/neomorphism">
+    <link href="./stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- password bar css -->
+    <link rel="stylesheet" href="./js/passStrength/password.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body class="formBody">
+    <div class="formContainer">
+        <h2 class="formTitle">Sign Up</h2>
+        <form autocomplete="off" class="signup">
+            <div class="field control-group">
+                <label for="firstName" class="field-label control-label">First Name</label>
+                <div class="controls">
+                    <input id="firstName" type="text" placeholder="John" class="input" required>
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="field control-group">
+                <label for="lastName" class="field-label control-label">Last Name</label>
+                <div class="controls">
+                    <input id="lastName" type="text" placeholder="Doe" class="input" required>
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="field control-group">
+                <label for="email-input" class="field-label control-label">Email</label>
+                <div class="controls">
+                    <input id="email-input" type="email" placeholder="john@email.com" class="input" required>
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="field">
+                <label for="password-input" class="field-label control-label">Password</label>
+                <div class="controls">
+                    <input id="password-input" type="password" placeholder="Enter password" class="input" minlength="6"
+                        required>
+                </div>
+                <br>
+                <div class="field">
+                    <button class="button" type="submit">Sign Up</button>
+                    <button class="button"><a href="main.html">Cancel</a></button>
+                </div>
+        </form>
+    </div>
+
+
+
+    <script type="text/javascript" src="./js/signup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/passStrength/password.js"></script>
+
+    <script>
+        $('#password-input').password({
+
+            // custom messages
+
+            shortPass: 'Your password is too short',
+
+            steps: {
+                13: 'Insecure: try adding Uppercase letters',
+
+                33: 'Weak: try combining letters & numbers',
+
+                67: 'Medium: try using special characters',
+
+                94: 'Strong password',
+
+            },
+
+            // show text
+            showText: true,
+
+            // enable animation
+            animate: true,
+            animateSpeed: 'fast',
+
+            // whether to check for partials in field
+            fieldPartialMatch: true,
+
+            // minimum length
+            minimumLength: 6,
+
+            // closest selector
+            closestSelector: 'div',
+
+            // use the old colorbar image
+            useColorBarImage: true,
+
+            // set custom rgb color ranges for colorbar
+            customColorBarRGB: {
+                red: [0, 240],
+                green: [0, 240],
+                blue: 10
+            },
+        });
+    </script>
+</body>
+
+</html>
